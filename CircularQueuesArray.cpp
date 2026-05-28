@@ -25,6 +25,12 @@ class Queues{
                 cout << "\nQueues overflow\n";
                 return;
             }
+
+            //cek apakah antrian penuh
+            if(FRONT == -1){
+                FRONT = 0;
+                REAR = 0;
+            }
         };
 
 };
